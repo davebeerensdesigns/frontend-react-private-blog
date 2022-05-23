@@ -35,14 +35,14 @@ De blog-applicatie heeft op dit moment nog geen pagina's en ook geen routing. Di
 
 1. Home pagina (`/`)
 2. Login pagina (`/login`)
-3. Blog Overzicht pagina (`/blogposts`)
+3. BlogOverview Overzicht pagina (`/blogposts`)
 4. Blogpost pagina (`/blogposts/:blogId`)
 
 * Zorg ervoor dat er *content* op die pagina's komt te staan:
-    * Maak een navigatiebalk met de links naar de Home Pagina, Login pagina en Blog Overzicht pagina. Zorg dat deze op
+    * Maak een navigatiebalk met de links naar de Home Pagina, Login pagina en BlogOverview Overzicht pagina. Zorg dat deze op
       iedere pagina te zien is.
     * De **Login pagina** bevat simpelweg een knop met "Inloggen" die de gebruiker doorstuurt naar overzichtspagina;
-    * De **Blog Overzicht pagina** bevat de totale hoeveelheid posts (*getal*) en alle blog-titels. De titels zijn links
+    * De **BlogOverview Overzicht pagina** bevat de totale hoeveelheid posts (*getal*) en alle blog-titels. De titels zijn links
       die je doorlinken naar die specifieke post.
     * De **Blogpost pagina** is een component dat, op basis van de parameter in de url (*dynamic parameters*), de juiste
       blogpost ophaalt uit de meegeleverde JSON data, en deze weergeeft . De JSON data kun je simpelweg importeren en
@@ -68,14 +68,14 @@ informatie ga je gebruiken om elementen conditioneel weer te geven, maar ook om 
 * Zorg ervoor dat wanneer een gebruiker op de "Inlog"-knop op de Login pagina klikt, de `isAuthenticated` state
   van `true` naar `false` getoggled wordt. Je zult de waarde en setter-functie (callback prop) dus vanaf `App.js` moeten
   doorgeven aan de pagina of component die deze waardes nodig heeft.
-* Wanneer de bezoeker *niet* ingelogd is, zijn zowel de blogposts als de Blog Overzichtpagina niet te bezoeken. Dit zijn
+* Wanneer de bezoeker *niet* ingelogd is, zijn zowel de blogposts als de BlogOverview Overzichtpagina niet te bezoeken. Dit zijn
   dus **private routes**!
 
 We gaan er ook voor zorgen dat de navigatiebalk zich aanpast wanneer een gebruiker wel of niet ingelogd is:
 
 - Wanneer de bezoeker *niet* ingelogd is, moet er een "inloggen"-link in de navigatie aanwezig zijn. Deze wijst naar de
   Login pagina.
-- Wanneer de bezoeker *niet* ingelogd is, is de link naar de Blog Overzichtpagina *niet* aanwezig.
+- Wanneer de bezoeker *niet* ingelogd is, is de link naar de BlogOverview Overzichtpagina *niet* aanwezig.
 - Als een bezoeker *wel* ingelogd is, moet er een "uitloggen"-knop in de navigatie staan. Als je daarop klikt wordt de
   gebruiker direct uitgelogd en naar de home-pagina gestuurd.
 
