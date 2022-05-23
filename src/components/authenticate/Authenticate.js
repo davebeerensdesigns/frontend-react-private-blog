@@ -6,7 +6,7 @@ function Authenticate({label, value, location}) {
 
     const [authenticatedValue, setAuthenticatedValue] = useContext(AuthenticatedContext);
 
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     const authenticate = () => {
         setAuthenticatedValue(value);

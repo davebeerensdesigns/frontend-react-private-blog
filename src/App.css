@@ -111,13 +111,13 @@ button:hover{
   margin-bottom: 1rem;
 }
 
-.postList{
+.postList, .userList{
   margin:1rem 0;
   border-radius: 0.25rem;
   border: 1px solid rgba(0,0,0,.125);
 }
 
-.postList a{
+.postList a, .userList .user{
   text-decoration: none;
   color: var(--color-gray-dark);
   display: block;
@@ -125,7 +125,7 @@ button:hover{
   background-color: #fff;
   border-bottom: 1px solid rgba(0,0,0,.125);
 }
-.postList a:last-child{
+.postList a:last-child, .userList .user:last-child{
   border-bottom: none;
 }
 
@@ -133,11 +133,11 @@ button:hover{
   background-color: #f8f9fa;
 }
 
-.postList a:first-child{
+.postList a:first-child, .userList .user:first-child{
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-.postList a:last-child{
+.postList a:last-child, .userList .user:last-child{
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
@@ -157,4 +157,34 @@ button:hover{
 
 .card h3{
   color: var(--color-gray);
+}
+
+.usersList{
+  margin-bottom: 1rem;
+}
+
+.usersList div {
+  margin-bottom: 1rem;
+}
+
+.loginForm input{
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.loginForm label{
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
